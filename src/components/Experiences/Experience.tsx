@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const experiences = [
   {
     role: "Junior Programmer",
-    company: "Thetys Co.td",
+    company: "Thetys Company",
     duration: "Sept 2024 - Present",
     description:
       "Developed responsive web apps using React, Tailwind CSS, and API integrations with C# Dotnet.",

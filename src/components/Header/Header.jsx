@@ -34,7 +34,7 @@ const Header = () => {
 
 
         <div className="md:hidden text-2xl" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <FaTimes className="text-blue-500"/> : <FaBars className="text-blue-500"/>}
+          {isOpen ? <FaTimes className="text-[#6366F1]"/> : <FaBars className="text-[#6366F1]"/>}
         </div>
       </div>
 
