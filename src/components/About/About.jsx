@@ -51,7 +51,7 @@ const About = () => {
           Passionate Developer
         </h2>
 
-        <p className="text-sm md:text-md leading-relaxed">
+        <p className="text-sm md:text-md leading-relaxed text-black">
           I’m a web developer with experience in frontend and backend
           technologies. I enjoy creating clean, interactive applications using
           modern frameworks. My skills range from React.js and Vue.js on the
