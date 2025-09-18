@@ -31,7 +31,7 @@ const About = () => {
         transition={{ duration: 1.5, type: "spring", stiffness: 70 }}
       >
         <img
-          src="/assets/6612.jpg"
+          src="/assets/profile.jpg"
           alt="My profile"
           className="rounded-2xl shadow-lg w-3/4 md:w-4/5 h-auto object-cover"
         />
