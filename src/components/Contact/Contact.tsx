@@ -37,7 +37,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="relative w-full min-h-screen flex items-center justify-center bg-white"
+      className="relative w-full h-auto flex items-center justify-center bg-white mt-10"
     >
       <div className="container mx-auto px-6 md:px-12 lg:px-20 text-gray-900">
         <motion.h2
@@ -46,7 +46,10 @@ const Contact = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.3 }}
-          className="text-3xl md:text-5xl font-bold mb-6 text-center text-primary"
+          // className="text-3xl md:text-5xl font-bold mb-6 text-center text-primary"
+          className="text-3xl md:text-5xl font-bold mb-12 text-center
+                   bg-gradient-to-r from-[#363b38] via-[#ffa62b] to-[#2b2020]
+                   bg-clip-text text-transparent"
         >
           Get in Touch
         </motion.h2>
