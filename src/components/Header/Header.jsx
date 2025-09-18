@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-
+import { motion as Motion } from "framer-motion";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("/");
 
   const navItems = [
     { label: "Home", href: "/" },
@@ -13,6 +14,13 @@ const Header = () => {
     { label: "Experiences", href: "/#experiences" },
     { label: "Contact Me", href: "/#contact" },
   ];
+
+    const handleClick = (href) => {
+
+    setActiveSection(href);
+    setIsOpen(false); 
+  };
+
 
 
   return (
@@ -25,9 +33,25 @@ const Header = () => {
         <ul className="hidden md:flex gap-8 text-base font-medium">
           {navItems.map((item, idx) => (
             <li key={idx}>
-              <a href={item.href} className="hover:text-gray-200 transition">
-                {item.label}
-              </a>
+              <a
+  href={item.href}
+  onClick={() => handleClick(item.href)}
+  className="block transition"
+>
+  {activeSection === item.href ? (
+    <Motion.span
+      initial={{ scale: 1 }}
+      animate={{ scale: 1.2 }}
+      transition={{ type: "spring", stiffness: 300, damping: 15 }}
+      className="font-bold underline underline-offset-4 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent animate-gradient animate-glitter"
+    >
+      {item.label}
+    </Motion.span>
+  ) : (
+    <span className="hover:text-gray-200">{item.label}</span>
+  )}
+</a>
+           
             </li>
           ))}
         </ul>
@@ -45,15 +69,27 @@ const Header = () => {
         }`}
       >
         <ul className="flex flex-col gap-4 text-base font-medium">
-          {navItems.map((item, idx) => (
+                   {navItems.map((item, idx) => (
             <li key={idx}>
               <a
-                href={item.href}
-                className="block hover:text-gray-200 transition"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.label}
-              </a>
+  href={item.href}
+  onClick={() => handleClick(item.href)}
+  className="block transition"
+>
+  {activeSection === item.href ? (
+    <Motion.span
+      initial={{ scale: 1 }}
+      animate={{ scale: 1.2 }}
+      transition={{ type: "spring", stiffness: 300, damping: 15 }}
+      className="font-bold underline underline-offset-4 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent animate-gradient animate-glitter"
+    >
+      {item.label}
+    </Motion.span>
+  ) : (
+    <span className="hover:text-gray-200">{item.label}</span>
+  )}
+</a>
+           
             </li>
           ))}
         </ul>

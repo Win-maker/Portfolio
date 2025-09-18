@@ -1,5 +1,4 @@
 import { motion as Motion } from "framer-motion";
-//import CV from "../../../public/assets/cv/WebDeveloperCV"
 
 const skills = [
   { name: "React.js", level: 80 },
@@ -16,7 +15,7 @@ const About = () => {
     <Motion.div
     id="about"
       className="flex flex-col md:flex-row w-full h-auto mx-auto py-10 md:py-16 px-6 md:px-12 
-      backdrop-blur-lg bg-white/10 rounded-2xl shadow-lg border border-white/20 
+      backdrop-blur-lg bg-gray-50 rounded-2xl shadow-lg border border-white/20 
       overflow-y-auto scroll-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, y: 0 }}
@@ -52,7 +51,7 @@ const About = () => {
           Passionate Developer
         </h2>
 
-        <p className="text-gray-600 text-sm md:text-md leading-relaxed">
+        <p className="text-sm md:text-md leading-relaxed">
           I’m a web developer with experience in frontend and backend
           technologies. I enjoy creating clean, interactive applications using
           modern frameworks. My skills range from React.js and Vue.js on the
@@ -103,7 +102,7 @@ const About = () => {
         </div>
 
  
-       <a href="/assets/cv/WebDeveloperCV.pdf" download="WebDeveloperCV.pdf">
+       <a href="/assets/cv/Win Win Htet (Web Developer CV).pdf" download="Win Win Htet (Web Developer CV).pdf">
           <Motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
