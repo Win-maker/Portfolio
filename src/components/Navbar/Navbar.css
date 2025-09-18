@@ -1,0 +1,28 @@
+.logo{
+    background-color: rgb(255, 166,43);
+}
+
+/* .logo::before {
+  position: absolute;
+  top:0;
+  left:-30%;
+  width:30%;
+  height:100%;
+  content:"";
+  z-index:-1;
+  background-color: rgb(255, 166,43);
+}
+
+.logo::after {
+  position: absolute;
+  top: 0;
+  right: -35%;
+  width: 150%;        
+  height: 100%;        
+  content: "";
+  z-index: -1;
+  background-color: rgb(255, 166, 43);
+  transform: rotate(-19deg);
+  transform-origin: top right; 
+}
+ */
