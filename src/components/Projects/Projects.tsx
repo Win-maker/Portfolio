@@ -30,7 +30,7 @@ const Projects = () => {
   return (
     <section 
      id="projects"
-    className="pt-25 min-h-screen relative backdrop-blur-lg bg-white/10 rounded-2xl shadow-lg border border-white/20">
+    className="min-h-screen relative backdrop-blur-lg bg-white/10 rounded-2xl shadow-lg border border-white/20 pb-10">
       <div className="container mx-auto px-4">
 
         <Motion.h2

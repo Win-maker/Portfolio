@@ -19,6 +19,7 @@ function App() {
               <About />
               <Education/>
               <Experience/>
+              <Projects/>
               <Contact/>
             </>
           } />

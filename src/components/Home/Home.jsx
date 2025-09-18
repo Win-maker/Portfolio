@@ -1,7 +1,6 @@
 import "./Home.css";
 import { motion as Motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa6";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const Home = () => {
@@ -62,7 +61,8 @@ const Home = () => {
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <Link to="/projects">
+          
+       <HashLink smooth to="/#projects">
             <Motion.button
               whileHover={{ backgroundColor: "rgb(15, 15, 15)" }}
               whileTap={{ scale: 0.95 }}
@@ -72,7 +72,7 @@ const Home = () => {
               <span>View Projects</span>
               <FaArrowRight />
             </Motion.button>
-          </Link>
+          </HashLink>
 
        <HashLink smooth to="/#contact">
                   <Motion.button

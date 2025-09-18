@@ -8,7 +8,7 @@ const Layout = () => {
         <Header />
       </header>
 
-      {/* this is the element that scrolls and that we hide the scrollbar on */}
+
       <main className="flex-1 overflow-y-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
         <Outlet />
       </main>
