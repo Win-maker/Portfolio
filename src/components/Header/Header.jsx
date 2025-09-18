@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { HashLink } from "react-router-hash-link";
+
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +8,7 @@ const Header = () => {
   const navItems = [
     { label: "Home", href: "/" },
     { label: "About Me", href: "/#about" },
-    { label: "Projects", href: "/projects" },
+    { label: "Projects", href: "/#projects" },
     { label: "Education", href: "/#education" },
     { label: "Experiences", href: "/#experiences" },
     { label: "Contact Me", href: "/#contact" },
