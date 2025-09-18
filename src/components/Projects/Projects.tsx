@@ -18,7 +18,7 @@ const projects = [
     link: "https://github.com/Win-maker/IBank"
   },
   {
-    title: "PhotoGram",
+    title: "PhotoGram (Project In Progress)",
     description: "My personal portfolio built with React and Tailwind.",
     image: "../assets/photogram.jpg",
     tech: ["React","Typescript","Firebase", "Tailwind CSS"],
